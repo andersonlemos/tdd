@@ -48,7 +48,7 @@ namespace CalculoDeSalario
 
             double salario = calculadora.CalculaSalario(dba);
 
-            Assert.AreEqual(500.0 * 0.85, salario, 0.00001);
+            Assert.AreEqual(500.0 * 0.9, salario, 0.00001);
 
 
         }
