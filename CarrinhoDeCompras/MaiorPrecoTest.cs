@@ -15,7 +15,7 @@ namespace CarrinhoDeCompras
 
 
         [Test]
-        public void DeveRetornarZeroSeCarrinhoVazio()
+        public void DeveRetornarZeroSeCarrinhoVazio() 
         {
 
             Assert.AreEqual(0.0,_carrinho.MaiorValor(),0.0000001);

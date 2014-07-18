@@ -9,135 +9,106 @@ namespace ConversorDeNumeroRomano
 {
     [TestFixture]
      public   class TestarNumeroRomano
+    {
+
+        private ConversorDeNumeroRomano romano;
+
+        [SetUp]
+        void InicializarNumeroRomano()
         {
-            [Test]
+            this.romano=new ConversorDeNumeroRomano();
+        }
+
+        [Test]
             public void DeveEntenderOSimboloI()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("I");
-
-                Assert.AreEqual(1, numero);
+            
+                Assert.AreEqual(1,  romano.Converte("I"));
 
             }
             [Test]
             public void DeveEntenderOSimboloV()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("V");
-
-                Assert.AreEqual(5, numero);
+                
+              Assert.AreEqual(5, romano.Converte("V"));
 
             }
             [Test]
             public void DeveEntenderOSimboloX()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("X");
-
-                Assert.AreEqual(10, numero);
+              
+                Assert.AreEqual(10, romano.Converte("X"));
 
             }
             [Test]
             public void DeveEntenderOSimboloL()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("L");
-
-                Assert.AreEqual(50, numero);
+            
+                Assert.AreEqual(50, romano.Converte("L"));
 
             }
             [Test]
             public void DeveEntenderOSimboloC()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("C");
-
-                Assert.AreEqual(100, numero);
+             
+             Assert.AreEqual(100,  romano.Converte("C"));
 
             }
             [Test]
             public void DeveEntenderOSimboloD()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("D");
-
-                Assert.AreEqual(500, numero);
+               
+                Assert.AreEqual(500, romano.Converte("D"));
 
             }
             [Test]
             public void DeveEntenderOSimboloM()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("M");
-
-                Assert.AreEqual(1000, numero);
+              
+              Assert.AreEqual(1000, romano.Converte("M"));
 
             }
             [Test]
             public void DeveEntenderOSimboloII()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("II");
-
-                Assert.AreEqual(2, numero);
+               
+                Assert.AreEqual(2, romano.Converte("II"));
 
             }
             [Test]
             public void DeveEntenderOSimboloVV()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("VV");
-
-                Assert.AreEqual(10, numero);
+               
+              Assert.AreEqual(10, romano.Converte("VV"));
 
             }
             [Test]
             public void DeveEntenderOSimboloXX()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("XX");
-
-                Assert.AreEqual(20, numero);
+               
+               
+                Assert.AreEqual(20,  romano.Converte("XX"));
 
             }
             [Test]
             public void DeveEntenderQuatroSimbolosDoisADoisComoXXII()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("XXII");
-
-                Assert.AreEqual(22, numero);
+              
+                Assert.AreEqual(22, romano.Converte("XXII"));
 
             }
             [Test]
             public void DeveEntenderNumerosComoIX()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("IX");
-
-                Assert.AreEqual(9, numero);
+              
+                Assert.AreEqual(9, romano.Converte("IX"));
 
             }
             [Test]
             public void DeveEntenderNumerosComplexosComoXXIV()
             {
-                var romano = new ConversorDeNumeroRomano();
-
-                int numero = romano.Converte("XXIV");
-
-                Assert.AreEqual(24, numero);
+               
+              Assert.AreEqual(24, romano.Converte("XXIV"));
 
             }
         }
