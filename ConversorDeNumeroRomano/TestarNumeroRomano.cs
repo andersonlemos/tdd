@@ -14,7 +14,7 @@ namespace ConversorDeNumeroRomano
         private ConversorDeNumeroRomano romano;
 
         [SetUp]
-        void InicializarNumeroRomano()
+       public void InicializarNumeroRomano()
         {
             this.romano=new ConversorDeNumeroRomano();
         }

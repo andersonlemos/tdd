@@ -12,7 +12,7 @@ namespace CalculoDeSalario
         private CalculadoraDeSalario _calculadora;
 
         [SetUp]
-        void InicializarCalculadoraDeSalario()
+      public  void InicializarCalculadoraDeSalario()
         {
             this._calculadora=new CalculadoraDeSalario();
         }

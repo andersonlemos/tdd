@@ -8,7 +8,7 @@ namespace CarrinhoDeCompras
         private CarrinhoDeCompras _carrinho;
 
         [SetUp]
-        void InicializarCarrinho()
+       public void InicializarCarrinho()
         {
             this._carrinho=new CarrinhoDeCompras();
         }
