@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculoDeSalario
 {
-    public enum Cargo
-    {
-        DESENVOLVEDOR,
-        DBA,
-        TESTADOR
-    }
-
+  
     public  class Funcionario
     {
       public string Nome { get; set; }
@@ -24,7 +18,6 @@ namespace CalculoDeSalario
             this.Nome = nome;
             this.Salario = salario;
             this.Cargo = cargo;
-
 
         }
 

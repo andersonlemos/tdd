@@ -22,7 +22,7 @@ namespace CarrinhoDeCompras
            {
                if(maior < item.ValorTotal)
                {
-                   maior = item.ValorTotal;
+                   maior  = item.ValorTotal;
                }
 
            }

@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoDeSalario", "Calculo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoDeCompras", "CarrinhoDeCompras\CarrinhoDeCompras.csproj", "{03F6CB46-5A4E-4265-AB85-EFC754847B75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora\Calculadora.csproj", "{DABB9EDF-DA46-491B-A155-D9FAECAF1BAF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{03F6CB46-5A4E-4265-AB85-EFC754847B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03F6CB46-5A4E-4265-AB85-EFC754847B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03F6CB46-5A4E-4265-AB85-EFC754847B75}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DABB9EDF-DA46-491B-A155-D9FAECAF1BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DABB9EDF-DA46-491B-A155-D9FAECAF1BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DABB9EDF-DA46-491B-A155-D9FAECAF1BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DABB9EDF-DA46-491B-A155-D9FAECAF1BAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

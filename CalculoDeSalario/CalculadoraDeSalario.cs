@@ -10,14 +10,9 @@ namespace CalculoDeSalario
     {
         public double CalculaSalario(Funcionario funcionario)
         {
-            
-                if (funcionario.Salario > 3000)
-                {
-                    return funcionario.Salario * 0.8;
-                }
-
-            return funcionario.Salario * 0.9;
+            return funcionario.Cargo.Regra.Calcula(funcionario);
         }
+       
 
     }
 }
