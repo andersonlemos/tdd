@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace CalculoDeSalario
 {
   
@@ -15,9 +10,9 @@ namespace CalculoDeSalario
         
        public Funcionario(string nome,double salario,Cargo cargo)
         {
-            this.Nome = nome;
-            this.Salario = salario;
-            this.Cargo = cargo;
+            Nome = nome;
+            Salario = salario;
+            Cargo = cargo;
 
         }
 

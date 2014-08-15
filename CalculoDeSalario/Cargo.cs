@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CalculoDeSalario
+﻿namespace CalculoDeSalario
 {
    public class Cargo
     {
@@ -17,7 +11,7 @@ namespace CalculoDeSalario
 
        private Cargo(IRegraDeCalculo regra)
        {
-           this.Regra = regra;
+           Regra = regra;
        }
 
     }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 namespace CalculoDeSalario
 {
     [TestFixture]
@@ -14,14 +9,14 @@ namespace CalculoDeSalario
         [SetUp]
         public  void InicializarCalculadoraDeSalario()
         {
-            this._calculadora=new CalculadoraDeSalario();
+            _calculadora=new CalculadoraDeSalario();
         }
 
         [Test]
         public void DeveCalcularSalarioParaDesenvolvedoresComSalarioAbaixoDoLimite()
         {
           
-            Funcionario desenvolvedor = new Funcionario("Mauricio",1500.0,Cargo.DESENVOLVEDOR);
+            var desenvolvedor = new Funcionario("Mauricio",1500.0,Cargo.DESENVOLVEDOR);
 
             double salario = _calculadora.CalculaSalario(desenvolvedor);
 
@@ -34,7 +29,7 @@ namespace CalculoDeSalario
         public void DeveCalcularSalarioParaDesenvolvedoresComSalarioAcimaDoLimite()
         {
          
-            Funcionario desenvolvedor = new Funcionario("Mauricio", 4000.0, Cargo.DESENVOLVEDOR);
+            var desenvolvedor = new Funcionario("Mauricio", 4000.0, Cargo.DESENVOLVEDOR);
 
             double salario = _calculadora.CalculaSalario(desenvolvedor);
 
@@ -73,7 +68,7 @@ namespace CalculoDeSalario
         public void DeveCalcularSalarioParaTestadoresComSalarioAbaixoDoLimite()
         {
 
-            Funcionario testador = new Funcionario("Mauricio", 500.0, Cargo.TESTADOR);
+            var testador = new Funcionario("Mauricio", 500.0, Cargo.TESTADOR);
 
             double salario = _calculadora.CalculaSalario(testador);
 
@@ -85,7 +80,7 @@ namespace CalculoDeSalario
         public void DeveCalcularSalarioParaTestadoresComSalarioAcimaDoLimite()
         {
 
-            Funcionario testador = new Funcionario("Mauricio", 4500.0, Cargo.TESTADOR);
+            var testador = new Funcionario("Mauricio", 4500.0, Cargo.TESTADOR);
 
             double salario = _calculadora.CalculaSalario(testador);
 
