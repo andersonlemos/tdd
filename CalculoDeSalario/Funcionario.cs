@@ -8,7 +8,7 @@ namespace CalculoDeSalario
       public double Salario { get; set; }
       public Cargo Cargo { get; private set; }
         
-       public Funcionario(string nome,double salario,Cargo cargo)
+      public Funcionario(string nome,double salario,Cargo cargo)
         {
             Nome = nome;
             Salario = salario;

@@ -5,7 +5,9 @@ namespace CalculoDeSalario
     {
         
         protected abstract int Limite();
+
         protected abstract double PorcentagemAcimaDoLimite();
+
         protected abstract double PorcentagemBase();
  
     }
