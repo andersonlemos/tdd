@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoDeSalario", "Calculo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoDeCompras", "CarrinhoDeCompras\CarrinhoDeCompras.csproj", "{03F6CB46-5A4E-4265-AB85-EFC754847B75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotaFiscal", "NotaFiscal\NotaFiscal.csproj", "{4E4081D0-7419-4317-9A63-AAD6C66D567A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{03F6CB46-5A4E-4265-AB85-EFC754847B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03F6CB46-5A4E-4265-AB85-EFC754847B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03F6CB46-5A4E-4265-AB85-EFC754847B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4081D0-7419-4317-9A63-AAD6C66D567A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4081D0-7419-4317-9A63-AAD6C66D567A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4081D0-7419-4317-9A63-AAD6C66D567A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4081D0-7419-4317-9A63-AAD6C66D567A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
