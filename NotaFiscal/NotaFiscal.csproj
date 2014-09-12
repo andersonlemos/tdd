@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeradorDeNotaFiscal.cs" />
     <Compile Include="NotaFiscal.cs" />
     <Compile Include="NUnitTestFixture.cs" />
     <Compile Include="Pedido.cs" />
