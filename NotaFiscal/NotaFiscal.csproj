@@ -50,10 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeradorDeNotaFiscal.cs" />
+    <Compile Include="NFDao.cs" />
     <Compile Include="NotaFiscal.cs" />
     <Compile Include="NUnitTestFixture.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SAP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
