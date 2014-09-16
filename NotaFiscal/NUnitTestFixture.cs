@@ -69,7 +69,9 @@ namespace NotaFiscal
                                                       acao2.Object
                                                   };
 
-            GeradorDeNotaFiscal gerador=new GeradorDeNotaFiscal(acoes);
+            IRelogio relogio=new RelogioDoSistema();
+
+            GeradorDeNotaFiscal gerador=new GeradorDeNotaFiscal(acoes,relogio);
 
             Pedido pedido=new Pedido("Mauricio",1000,1);
 
