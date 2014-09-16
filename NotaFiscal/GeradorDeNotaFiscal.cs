@@ -9,23 +9,24 @@ namespace NotaFiscal
    public class GeradorDeNotaFiscal
    {
 
-       private NFDao dao;
+     
+       private IList<IAcaoAposGerarNota> acoes;
 
-
-       public GeradorDeNotaFiscal(NFDao dao)
+       public GeradorDeNotaFiscal( IList<IAcaoAposGerarNota> acoes)
        {
-           this.dao = dao;
+           this.acoes = acoes;
        }
-
-
-
+       
        public NotaFiscal Gera(Pedido pedido)
        {
            
            //return new NotaFiscal(pedido.Cliente,pedido.ValorTotal * 0.94,DateTime.Now);
            NotaFiscal nf = new NotaFiscal(pedido.Cliente, pedido.ValorTotal * 0.94, DateTime.Now);
 
-           dao.Persiste(nf);
+           foreach(var acao in acoes)
+           {
+               acao.Executa(nf);
+           }
 
            return nf;
        }
