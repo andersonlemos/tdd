@@ -67,6 +67,7 @@
     <Compile Include="GeradorDeNotaFiscal.cs" />
     <Compile Include="IAcaoAposGerarNota.cs" />
     <Compile Include="IRelogio.cs" />
+    <Compile Include="ITabela.cs" />
     <Compile Include="NFDao.cs" />
     <Compile Include="NotaFiscal.cs" />
     <Compile Include="NUnitTestFixture.cs" />

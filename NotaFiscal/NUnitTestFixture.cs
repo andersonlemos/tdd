@@ -57,29 +57,51 @@ namespace NotaFiscal
 
         //}
 
+        //[Test]
+        //public void DeveInvocarAcoesPosteriores()
+        //{
+        //    var acao1 = new Mock<IAcaoAposGerarNota>();
+        //    var acao2 = new Mock<IAcaoAposGerarNota>();
+
+        //    IList<IAcaoAposGerarNota> acoes = new List<IAcaoAposGerarNota>()
+        //                                          {
+        //                                              acao1.Object, 
+        //                                              acao2.Object
+        //                                          };
+
+        //    IRelogio relogio=new RelogioDoSistema();
+
+        //    GeradorDeNotaFiscal gerador=new GeradorDeNotaFiscal(acoes,relogio);
+
+        //    Pedido pedido=new Pedido("Mauricio",1000,1);
+
+        //    NotaFiscal nf = gerador.Gera(pedido);
+
+        //    acao1.Verify(t=>t.Executa(nf));
+        //    acao2.Verify(t=>t.Executa(nf));
+            
+        //}
         [Test]
-        public void DeveInvocarAcoesPosteriores()
+        public void DeveConsultarTabelaATabelaParaCalcularValor()
         {
-            var acao1 = new Mock<IAcaoAposGerarNota>();
-            var acao2 = new Mock<IAcaoAposGerarNota>();
+            var tabela = new Mock<ITabela>();
+            
+            tabela.Setup(t => t.ParaValor(1000.0)).Returns(0.2);
 
-            IList<IAcaoAposGerarNota> acoes = new List<IAcaoAposGerarNota>()
-                                                  {
-                                                      acao1.Object, 
-                                                      acao2.Object
-                                                  };
 
-            IRelogio relogio=new RelogioDoSistema();
+            IList<IAcaoAposGerarNota> nenhumaAcao = new List<IAcaoAposGerarNota>();
 
-            GeradorDeNotaFiscal gerador=new GeradorDeNotaFiscal(acoes,relogio);
+            GeradorDeNotaFiscal gerador= new GeradorDeNotaFiscal(nenhumaAcao,tabela.Object);
 
-            Pedido pedido=new Pedido("Mauricio",1000,1);
-
+            Pedido pedido = new Pedido("Mauricio", 1000, 1);
+            
             NotaFiscal nf = gerador.Gera(pedido);
 
-            acao1.Verify(t=>t.Executa(nf));
-            acao2.Verify(t=>t.Executa(nf));
-            
+            tabela.Verify(r => r.ParaValor(1000.0));
+
+            Assert.AreEqual(1000 * 0.2, nf.Valor, 0.00001);
+
+
         }
 
     }
