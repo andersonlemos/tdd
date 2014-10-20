@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorDeNumeroRomano", "ConversorDeNumeroRomano\ConversorDeNumeroRomano.csproj", "{007F5E99-7B91-4BC2-A563-F1E72BEE3531}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoDeSalario", "CalculoDeSalario\CalculoDeSalario.csproj", "{CD936F14-DE67-4C96-9972-527CC0EBD979}"
@@ -8,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarrinhoDeCompras", "CarrinhoDeCompras\CarrinhoDeCompras.csproj", "{03F6CB46-5A4E-4265-AB85-EFC754847B75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotaFiscal", "NotaFiscal\NotaFiscal.csproj", "{4E4081D0-7419-4317-9A63-AAD6C66D567A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E8014B22-BB82-4D29-B9DD-379E3078FA3E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
